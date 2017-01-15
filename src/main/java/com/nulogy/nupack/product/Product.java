@@ -1,8 +1,10 @@
 package com.nulogy.nupack.product;
 
+import java.math.BigDecimal;
+
 public class Product {
 
-    private double price;
+    private BigDecimal price;
     private ProductType productType;
     private int numOfPeople;
     
@@ -10,17 +12,17 @@ public class Product {
         
     }
     
-    public Product(double price, ProductType productType, int numOfPeople) {
+    public Product(BigDecimal price, ProductType productType, int numOfPeople) {
         this.price = price;
         this.productType = productType;
         this.numOfPeople = numOfPeople;
     }
 
-    public double getPrice() {
+    public BigDecimal getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(BigDecimal price) {
         this.price = price;
     }
 
