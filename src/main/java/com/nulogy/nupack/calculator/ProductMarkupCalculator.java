@@ -30,6 +30,12 @@ public class ProductMarkupCalculator {
 
     public String calculate(Product product) throws ProductValidationException {
         BigDecimal finalCost = new BigDecimal(0);
+        
+        //Would probably also validate on input before Product object is created.
+        
+        //This validation call is here assuming the above and that the product object 
+        //does NOT go directly from creation to calculation, therefore raising a risk that
+        //the product fields have changed.
         if (this.validator.validate(product)) {
             BigDecimal flatMarkupValue = calculateFlatMarkup(product.getPrice());
             BigDecimal productTypeMarkup = calculateProductTypeMarkup(flatMarkupValue, product.getProductType());

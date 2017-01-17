@@ -8,10 +8,9 @@ public class Product {
     private ProductType productType;
     private int numOfPeople;
     
-    public Product() {
-        
-    }
-    
+    //Given that I did not handle the input,
+    //I have assumed that the price would have been sanitized
+    //and converted to BigDecimal.
     public Product(BigDecimal price, ProductType productType, int numOfPeople) {
         this.price = price;
         this.productType = productType;
