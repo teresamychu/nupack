@@ -10,4 +10,4 @@ Solving the world's pricing problems one markup at a time.
 
 ## How To Run Tests
 Once maven is installed:
-  - 'mvn test'
+  - `mvn test`
